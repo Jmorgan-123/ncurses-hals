@@ -42,6 +42,14 @@ void ncurses_display_hal_cursor_visibility(bool visible);
 
 /* Enable library features */
 #define HAS_CHARACTER_INTERFACE
-/*#define HAS_BITMAP_INTERFACE*/
+
+/* bindings */
+#define deasplay_hal_init               ncurses_display_hal_init
+#define deasplay_hal_power              ncurses_display_hal_power
+#define deasplay_hal_set_cursor         ncurses_display_hal_set_cursor
+#define deasplay_hal_write_char         ncurses_display_hal_write_char
+#define deasplay_hal_cursor_visibility  ncurses_display_hal_cursor_visibility
+#define deasplay_hal_write_extended     ncurses_write_extended
+#define deasplay_hal_set_extended       ncurses_set_extended
 
 #endif /* SRC_DEASPLAY_DRIVER_NCURSES_NCURSES_HAL_H_ */
